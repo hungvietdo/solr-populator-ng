@@ -34,6 +34,7 @@
         }
     },
     "scripts": {
+        "build": "composer lint && composer test",
         "lint": "phpcs --standard=PSR2 src test",
         "test": "phpunit"
     }
