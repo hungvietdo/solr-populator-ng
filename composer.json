@@ -25,15 +25,16 @@
     },
     "autoload": {
         "psr-4": {
-            "TraderInteractive\\Cronus\\Tasks\\SolrPopulator\\": "src"
+            "TraderInteractive\\SolrPopulator\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TraderInteractive\\Cronus\\Tasks\\SolrPopulator\\": "test"
+            "TraderInteractive\\SolrPopulator\\": "test"
         }
     },
     "scripts": {
+        "build": "composer lint && composer test",
         "lint": "phpcs --standard=PSR2 src test",
         "test": "phpunit"
     }
