@@ -15,6 +15,7 @@ class MariaDataFileLoaderTest extends TestCase
     /**
      * @test
      * @covers ::getMappedAdRecords
+     * @covers ::__construct
      */
     public function getMappedAdRecords()
     {
