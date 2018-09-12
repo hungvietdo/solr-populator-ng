@@ -34,18 +34,5 @@ class FileStreamTest extends TestCase
     public function WrongClassNameTest () {
 
         $fileStream = FileStream::Factory('abc', 'testing');
-        $expect = 'TraderInteractive\SolrPopulator\PhysicalFileStream';
-        $actual = get_class($fileStream);
-        
-        $this->assertEquals($expect, $actual);
-    }
-
-    private function getMockFileStream(string $fileContents) : FileStreamInterface
-    {
-
-        $mock = $this->createMock(FileStream::class);
-        $mock->method('Factory')->willReturn($fileContents);
-
-        return $mock;
     }
 }
